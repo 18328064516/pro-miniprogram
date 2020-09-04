@@ -1,0 +1,34 @@
+<!--pages/proDetail/proDetail.wxml-->
+<!-- 轮播图开始 -->
+<view class="swiper">
+  <swiper autoplay="true">
+    <swiper-item wx:for="{{swipers3}}" wx:key="index">
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="proddet">
+  <view class="detimg">
+    <image src="{{info.pimg}}"></image>
+    <view  class="ptimetext1">
+      <block>{{info.pname}}</block> 
+    </view>
+    <view class="ptimetext2">
+      <block>{{info.ptime}}</block> 
+    </view>   
+  </view>
+</view>
+
+<view class="spjj">
+  <view>商品简介</view>
+</view>
+
+<view class="spxqy">
+  <view>商品详情</view>
+  <view class="spxqnr">{{info.spxq}}</view>
+</view>
+
+<view class="xgtj">
+  <view>相关推荐</view>
+</view>

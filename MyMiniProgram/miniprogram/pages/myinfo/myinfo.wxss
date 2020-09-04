@@ -1,0 +1,87 @@
+/* pages/myinfo/myinfo.wxss */
+swiper{
+  height: 316rpx;
+}
+.swiper image{
+  width: 750rpx;
+  height: 320rpx;
+}
+
+.syxp{
+  color:#abba11;
+  font-size:20px;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.new{
+  line-height:1.75;
+  font-size: 16px;
+  text-align: center;
+}
+.location{
+  margin-left: 20rpx;
+  font-size: 14px;
+  margin-top: 20rpx;
+}
+
+map{
+  width: 94%; height: 200px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 50rpx;
+}
+
+.liuyanqu{
+  margin-top: 30rpx;
+}
+.liuyanqu input{
+  border: 1px solid #ccc;
+  width: 94%;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.yanzhengma{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.yzm{
+  width: 100%;
+  margin-right: 0 !important;
+}
+.yzmtp{
+  width: 100%;
+  margin-left: 0 !important;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 16px;
+}
+.btn button{
+  border: 1px solid #ccc;
+  width: 40%;
+}
+
+.map{
+  position: relative;
+}
+.jiajian{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  right: 40rpx;
+}
+.jiajian view{
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+}

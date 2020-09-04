@@ -1,0 +1,82 @@
+/* pages/search2/search2.wxss */
+.search{  
+  width: 80%;  
+}  
+.search_arr {  
+  border: 1px solid #d0d0d0;  
+  border-radius: 10rpx;  
+  margin-left: 20rpx; 
+  margin-top: 30rpx; 
+  position: relative;
+}  
+.search_arr .ssk{  
+  margin-left: 60rpx;  
+  height: 60rpx;  
+  border-radius: 5px;  
+  width: 70%;
+}  
+.bc_text {  
+  line-height: 68rpx;  
+  height: 68rpx;  
+  margin-top: 34rpx;  
+}  
+  
+.sousuo {  
+  /* margin-left: 15rpx;   */
+  width: 15%;  
+  /* line-height: 150%;   */
+  line-height: 60rpx;
+  text-align: center;  
+  border: 1px solid #d0d0d0;  
+  border-radius: 10rpx;  
+  margin-top: 30rpx; 
+}  
+.page_row{  
+  display: flex;  
+  flex-direction: row  
+}  
+.searchcion {  
+  margin: 10rpx 10rpx 10rpx 10rpx;  
+  position: absolute;  
+  left:25rpx;  
+  z-index: 2;  
+  width: 20px;  
+  height: 20px;  
+  text-align: center;  
+}  
+
+.proall{  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30rpx;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  
+}
+.proallimg{
+  width: 354rpx;
+  height: 370rpx;
+  border: 1px #ccc solid;
+  margin-top: 10rpx;
+  text-align: center;
+}
+.proallimg image{
+  width: 350rpx;
+  height: 300rpx; 
+}
+
+.search_clear{
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.zanwu{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%,-50%);
+}

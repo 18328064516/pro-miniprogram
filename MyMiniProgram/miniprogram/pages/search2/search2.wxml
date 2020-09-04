@@ -1,0 +1,28 @@
+<!--pages/search2/search2.wxml-->
+<!-- <text>pages/search2/search2.wxml</text> -->
+<!-- <view class='page_row' bindtap="suo">   -->
+<view class='page_row'> 
+  <view class="search">  
+      <view class="df search_arr">  
+        <icon class="searchcion" size='20' type='search'></icon>  
+        <!-- <input class="ssk"  placeholder="请输入关键字" value="{{inputValue}}" bindconfirm="search" bindinput='bindInput'/>   -->
+        <!-- <input class="ssk"  placeholder="请输入关键字" value="{{inputValue}}" bindinput='bindInput' bindtap="search2" />   -->
+        <input class="ssk"  placeholder="请输入关键字" value="{{inputValue}}" bindinput='bindInput' />
+        <view class="search_clear" bindtap="clear">×</view>
+      </view>  
+  </view>  
+  <view class='sousuo' bindtap="back">返回</view> 
+</view>  
+
+<view class="proall"  wx:if="{{products.length>0}}">
+  <view wx:for="{{products}}" wx:key="index" class="proallimg" >
+    <navigator url='../../pages/proDetail/proDetail?id={{item.pid}}' hover-class="navigator-hover">
+      <image src="{{products[index].pimg}}"></image>
+      <block>{{products[index].pname}}</block> 
+    </navigator>
+  </view>
+</view>
+
+<view wx:elif="{{products.length==0}}">
+  <view class="zanwu">暂无商品！</view>
+</view>

@@ -1,0 +1,57 @@
+<!--pages/myinfo/myinfo.wxml-->
+<!-- 轮播图开始 -->
+<view class="swiper">
+  <swiper autoplay="true">
+    <swiper-item wx:for="{{swipers5}}" wx:key="index">
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="mw-concat">
+  <view class="syxp">联系我们</view>
+  <view class="new">CONTCAT US</view>
+  <view class="location">
+    <view>
+    地址：广东省深圳市福田区泰然九路皇冠科技园3栋F座
+    </view>
+    <view>
+    电话：0755-83161714
+    </view>
+    <view>
+    邮箱：service@pin-dao.cn
+    </view>
+  </view>
+</view>
+
+<view class="map">
+  <map 
+    id="map" 
+    longitude="114.022921"
+    latitude="22.532052" 
+    scale="14"  
+    bindcontroltap="controltap" 
+    markers="{{markers}}" 
+    bindmarkertap="markertap"  
+    bindregionchange="regionchange" 
+    show-location >
+  </map>
+  <view class="jiajian">
+    <view >+</view>
+    <view>-</view>
+  </view>
+</view>
+
+<view class="liuyanqu">
+  <input placeholder="留言标题"></input>
+  <input placeholder="留言内容"></input>
+  <input placeholder="联系邮箱"></input>
+  <!-- <view class="yanzhengma">
+    <input placeholder="验证码" class="yzm"></input>
+    <input class="yzmtp"></input>
+  </view> -->
+  <view class="btn">
+    <button>重置</button>
+    <button>提交</button>
+  </view>
+</view>

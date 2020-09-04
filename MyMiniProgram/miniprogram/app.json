@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/search/search",
+    "pages/search2/search2",
+    "pages/cart/cart",
+    "pages/myinfo/myinfo",
+    "pages/proDetail/proDetail"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "奈雪商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a3a3a3",
+    "selectedColor": "#d4237a",
+    "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/tabimg/shouye11.png",
+      "selectedIconPath": "images/tabimg/shouye12.png"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "text": "商品搜索",
+      "iconPath": "images/tabimg/search1.png",
+      "selectedIconPath": "images/tabimg/search2.png"
+    },
+    {
+      "pagePath": "pages/category/category",
+      "text": "宝贝分类",
+      "iconPath": "images/tabimg/fenlei1.png",
+      "selectedIconPath": "images/tabimg/fenlei2.png"
+    },
+    {
+      "pagePath": "pages/myinfo/myinfo",
+      "text": "联系我们",
+      "iconPath": "images/tabimg/contcat1.png",
+      "selectedIconPath": "images/tabimg/contcat2.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

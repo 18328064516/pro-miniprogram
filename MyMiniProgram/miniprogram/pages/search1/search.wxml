@@ -1,0 +1,31 @@
+<!--pages/search/search.wxml-->
+<!-- 轮播图开始 -->
+<view class="swiper">
+  <swiper autoplay="true">
+    <swiper-item wx:for="{{swipers4}}" wx:key="index">
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- <view class='page_row' bindtap="suo">   -->
+<view class='page_row'> 
+  <view class="search">  
+      <view class="df search_arr">  
+        <icon class="searchcion" size='20' type='search'></icon>  
+        <!-- <input class="ssk"  placeholder="请输入关键字" value="{{inputValue}}" bindconfirm="search" bindinput='bindInput'/>   -->
+        <!-- <input class="ssk"  placeholder="请输入关键字" value="{{inputValue}}" bindinput='bindInput' bindtap="search2" />   -->
+        <input class="ssk"  placeholder="请输入关键字"  bindtap="search2" /> 
+      </view>  
+  </view>  
+  <view class='sousuo' bindtap="back">确定</view> 
+</view>  
+
+<view class="proall">
+  <view wx:for="{{products}}" wx:key="index" class="proallimg" >
+    <navigator url='../../pages/proDetail/proDetail?id={{item.pid}}' hover-class="navigator-hover">
+      <image src="{{products[index].pimg}}"></image>
+      <block>{{products[index].pname}}</block> 
+    </navigator>
+  </view>
+</view>

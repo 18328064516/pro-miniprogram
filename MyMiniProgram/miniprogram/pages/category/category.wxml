@@ -1,0 +1,48 @@
+<!--pages/category/category.wxml-->
+<view>
+    <view wx:for="{{proimgs}}" wx:key="index" class="proimg1">
+        <image src="{{item}}"></image>  
+    </view>
+</view>
+
+<!-- <view class="fenlei">
+  <view wx:for="{{fenlei}}" wx:key="index" id="sandalei" class="boxtwo-tab-nav {{curIndex == index ? 'active' : ''}}" 
+  bindtap="boxtwo" 
+  data-index="{{index}}">
+    {{item.name}}
+  </view>
+</view> -->
+
+<view class="fenlei">
+  <view class="boxtwo-tab-nav {{curIndex == 0 ?'active':''}}" bindtap="boxtwo" data-index="0"  id="sandalei" bindtap="tap1" >寻好茶</view>
+  <view class="boxtwo-tab-nav {{curIndex == 1 ?'active':''}}" bindtap="boxtwo" data-index="1"  id="sandalei" bindtap="tap2">手做软欧包</view>
+  <view class="boxtwo-tab-nav {{curIndex == 2 ?'active':''}}" bindtap="boxtwo" data-index="2"  id="sandalei" bindtap="tap3">冷泡茶</view>
+</view>
+
+
+<view wx:if="{{curIndex == 0}}" class="prod">
+  <view wx:for="{{products1}}" wx:key="*this" class="proimg2">
+  <navigator url='../../pages/proDetail/proDetail?id={{item.pid}}' hover-class="navigator-hover">
+    <image src="{{item.pimg}}"></image>
+    <block>{{item.pname}}</block> 
+  </navigator>
+  </view>
+</view>
+
+<view wx:if="{{curIndex == 1}}" class="prod">
+  <view wx:for="{{products2}}" wx:key="*this" class="proimg2">
+  <navigator url='../../pages/proDetail/proDetail?id={{item.pid}}' hover-class="navigator-hover">
+    <image src="{{item.pimg}}"></image>
+    <block>{{item.pname}}</block> 
+  </navigator>
+  </view>
+</view>
+
+<view wx:if="{{curIndex == 2}}" class="prod">
+  <view wx:for="{{products3}}" wx:key="*this" class="proimg2">
+  <navigator url='../../pages/proDetail/proDetail?id={{item.pid}}' hover-class="navigator-hover">
+    <image src="{{item.pimg}}"></image>
+    <block>{{item.pname}}</block> 
+  </navigator>
+  </view>
+</view>

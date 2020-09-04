@@ -1,0 +1,59 @@
+/* pages/proDetail/proDetail.wxss */
+swiper{
+  height: 316rpx;
+}
+.swiper image{
+  width: 750rpx;
+  height: 320rpx;
+}
+
+.proddet{  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+}
+.detimg{
+  width: 100%;
+  height: 600rpx;
+  border-bottom: 1px #ccc solid;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detimg image{
+  height: 600rpx; 
+  width: 70%;
+  display: block;
+}
+.ptimetext1{
+  font-weight: 500;
+  font-size: 24px;
+  width: 100%;
+}
+.ptimetext2{
+  margin-top: 20rpx;
+  color: #ccc;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom:40rpx;
+}
+
+.spjj,.spxqy,.xgtj{ 
+  text-align: center;
+  font-size: 16px;
+}
+.spjj,.spxqy{
+  margin: 30rpx 0;
+  border-bottom: 1px #ccc solid;
+}
+.spjj view,.spxqy view,.xgtj view{
+  margin-bottom: 30rpx;
+}
+.spxqnr{
+  text-align: left;
+  font-size: 14px;
+}

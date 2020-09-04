@@ -1,0 +1,80 @@
+/* pages/category/category.wxss */
+.pages{
+  background-color: #fff;
+}
+.proimg1 image{
+  width: 750rpx;
+  height: 316rpx;
+}
+
+.fenlei{
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+  align-items: center;
+}
+/* .sandalei{
+  border: 1px solid #ccc;
+  width: 350rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 18px;
+  color: #666;
+} */
+/* #sandalei{
+  border: 1px solid #ccc;
+  width: 350rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 18px;
+  color: #666;
+} */
+.boxtwo-tab-nav{
+  display: inline-block;
+  width: 35%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 1rpx solid #ededed;
+  box-sizing: border-box;
+  text-align: center;
+  color: black;
+  font-size: 30rpx
+}
+.on{
+  color:#abba11;
+  border-top: 5rpx solid #abba11;
+  border-bottom: 0rpx solid #ededed;
+}
+
+
+.prod{  
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10rpx;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  
+}
+.proimg2{
+  width: 354rpx;
+  height: 370rpx;
+  border: 1px #ccc solid;
+  margin-top: 10rpx;
+  text-align: center;
+}
+.proimg2 image{
+  width: 350rpx;
+  height: 300rpx; 
+}
+
+.fenlei .boxtwo-tab-nav.active{
+  color:#abba11;
+  border-top: 5rpx solid #abba11;
+  border-bottom: 0rpx solid #ededed;
+}
